@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/bg">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutUser"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/user"
+        android:textColorHint="@color/blueg500"
+        app:boxBackgroundColor="@color/gold500"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/blueg700"
+        app:endIconCheckable="true"
+        app:endIconDrawable="@drawable/ic_people"
+        app:endIconMode="custom"
+        app:endIconTint="@color/blueg500"
+        app:hintTextColor="@color/blueg500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewBam">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/blueg500" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutPass"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/pass"
+        android:textColorHint="@color/blueg500"
+        app:boxBackgroundColor="@color/gold500"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/blueg700"
+        app:endIconCheckable="true"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/blueg500"
+        app:hintTextColor="@color/blueg500"
+        app:layout_constraintEnd_toEndOf="@+id/layoutUser"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/layoutUser"
+        app:layout_constraintTop_toBottomOf="@+id/layoutUser">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/blueg500" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/gold500"
+        android:text="@string/btn_login"
+        android:textColor="@color/blueg500"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/layoutPass"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/layoutPass"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPass" />
+
+    <ImageView
+        android:id="@+id/imgViewBam"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/crown" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/btn_register"
+        android:textColor="@color/gold500"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRecover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/gold500"
+        app:strokeWidth="2dp"
+        app:cornerRadius="15dp"/>
+
+    <TextView
+        android:id="@+id/tvRecover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/btn_recover_pass"
+        android:textColor="@color/gold500"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBanner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="casual"
+        android:text="@string/banner"
+        android:textAlignment="center"
+        android:textColor="@color/gold200"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgViewBam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgViewBam"
+        app:layout_constraintTop_toTopOf="@+id/imgViewBam" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

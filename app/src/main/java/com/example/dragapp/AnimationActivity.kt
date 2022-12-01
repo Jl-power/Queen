@@ -7,7 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import com.example.dragapp.databinding.ActivityAnimationBinding
 
-class Animation : AppCompatActivity() {
+class AnimationActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityAnimationBinding
 
@@ -17,7 +17,7 @@ class Animation : AppCompatActivity() {
         setContentView(binding.root)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }, 3500)

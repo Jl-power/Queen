@@ -1,6 +1,7 @@
 package com.example.dragapp
 
 import android.content.ContentValues.TAG
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -10,6 +11,7 @@ import androidx.room.Room
 import com.example.dragapp.database.QueenDB
 import com.example.dragapp.databinding.ActivityMainBinding
 import com.example.dragapp.pojo.Queen
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.ktx.firestore
@@ -34,6 +36,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         initQueens()
+
+        binding.imgLogout.setOnClickListener {
+            Firebase.auth.signOut()
+            val intent = Intent(this,LoginActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
     private fun initQueens() {

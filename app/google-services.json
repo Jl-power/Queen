@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "264823603371",
+    "project_id": "queens-748eb",
+    "storage_bucket": "queens-748eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264823603371:android:36609c2b4d6ac571e177ee",
+        "android_client_info": {
+          "package_name": "com.example.dragapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264823603371-vtni0fjvif7ar9l7r406msqda20s1p2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8sPK71KUeuXaEI_3yPnvR5w8-6e0YsTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264823603371-vtni0fjvif7ar9l7r406msqda20s1p2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

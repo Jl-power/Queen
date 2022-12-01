@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blueg500">#465C67</color>
+    <color name="blueg200">#728995</color>
+    <color name="blueg700">#1d333d</color>
+    <color name="gold500">#ffeb3b</color>
+    <color name="gold200">#ffff72</color>
+    <color name="gold700">#c8b900</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

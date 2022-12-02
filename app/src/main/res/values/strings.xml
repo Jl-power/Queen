@@ -4,9 +4,15 @@
     <string name="subtitle">Conoce a tus Queens</string>
     <string name="user">Correo Electronico</string>
     <string name="pass">Contraseña</string>
+    <string name="pass2">Contraseña (8 caracteres max.)</string>
     <string name="btn_login">Iniciar Sesion</string>
     <string name="btn_signUp">sign up with</string>
     <string name="btn_register">Registrarse</string>
     <string name="btn_recover_pass">Recuperar Contraseña</string>
     <string name="banner">"El Drag es Arte y el Arte es subjetivo"</string>
+    <string name="name">Nombre y Apellido</string>
+    <string name="number">Numero de contacto</string>
+    <string name="register">Registro</string>
+    <string name="btn_accept">Aceptar</string>
+    <string name="btn_cancel">Cancelar</string>
 </resources>

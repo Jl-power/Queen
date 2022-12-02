@@ -1,5 +1,6 @@
 package com.example.dragapp.pojo
 
+import android.provider.ContactsContract.CommonDataKinds.Email
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName

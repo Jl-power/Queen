@@ -24,7 +24,12 @@ class LoginActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         binding.btnLogin.setOnClickListener {
-            emptyControl(binding.inputUser.text.toString(),binding.inputPass.text.toString())
+            emptyControl(binding.inputMail.text.toString(),binding.inputPass.text.toString())
+        }
+
+        binding.btnRegister.setOnClickListener {
+            val intent = Intent(this,RegisterActivity::class.java)
+            startActivity(intent)
         }
 
     }

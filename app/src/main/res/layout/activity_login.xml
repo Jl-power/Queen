@@ -22,7 +22,7 @@
         app:boxCornerRadiusTopStart="10dp"
         app:boxStrokeColor="@color/blueg700"
         app:endIconCheckable="true"
-        app:endIconDrawable="@drawable/ic_people"
+        app:endIconDrawable="@drawable/ic_mail"
         app:endIconMode="custom"
         app:endIconTint="@color/blueg500"
         app:hintTextColor="@color/blueg500"
@@ -32,10 +32,11 @@
         app:layout_constraintTop_toBottomOf="@+id/imgViewBam">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputUser"
+            android:id="@+id/inputMail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:singleLine="true"
+            android:inputType="textEmailAddress"
             android:textColor="@color/blueg500" />
     </com.google.android.material.textfield.TextInputLayout>
 

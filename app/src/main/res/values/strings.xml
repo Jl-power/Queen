@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Queens</string>
-    <string name="title">¡Nos da gusto verte!</string>
+    <string name="title">¡Hola\nLucas!</string>
     <string name="subtitle">Conoce a tus Queens</string>
     <string name="user">Correo Electronico</string>
     <string name="pass">Contraseña</string>
@@ -15,4 +15,5 @@
     <string name="register">Registro</string>
     <string name="btn_accept">Aceptar</string>
     <string name="btn_cancel">Cancelar</string>
+    <string name="exit">Cerrar Sesion</string>
 </resources>

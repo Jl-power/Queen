@@ -8,4 +8,5 @@
     <color name="gold700">#c8b900</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#ec4848</color>
 </resources>

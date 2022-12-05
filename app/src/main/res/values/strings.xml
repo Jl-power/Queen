@@ -20,4 +20,6 @@
     <string name="recover_title">Ingrese su correo electronico</string>
     <string name="recover_subtitle">Ingrese el codigo de confirmacion</string>
     <string name="btn_confirm_code">Confirmar</string>
+    <string name="recover2_title">Ingrese su nueva contraseña</string>
+    <string name="recover2_subtitle">Repita la nueva contraseña</string>
 </resources>

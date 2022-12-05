@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.dragapp.databinding.ActivityLoginBinding
+import com.example.dragapp.utils.Generics
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthException
@@ -42,20 +43,11 @@ class LoginActivity : AppCompatActivity() {
     private fun emptyControl(email: String, password: String) {
 
         if(email.isEmpty() && password.isEmpty())
-            Snackbar.make(binding.layoutLogin,"Ingrese sus datos por favor",
-                Snackbar.LENGTH_SHORT).apply {
-                view.background = resources.getDrawable(R.drawable.round_corner, null)
-            }.show()
+            Generics.showSnackBar(binding.layoutLogin,"Ingrese sus datos por favor")
         if(email.isEmpty() && password.isNotEmpty())
-            Snackbar.make(binding.layoutLogin,"Ingrese su correo por favor",
-                Snackbar.LENGTH_SHORT).apply {
-                view.background = resources.getDrawable(R.drawable.round_corner, null)
-            }.show()
+            Generics.showSnackBar(binding.layoutLogin,"Ingrese su correo por favor")
         if(password.isEmpty() && email.isNotEmpty())
-            Snackbar.make(binding.layoutLogin,"Ingrese su contraseña por favor",
-                Snackbar.LENGTH_SHORT).apply {
-                view.background = resources.getDrawable(R.drawable.round_corner, null)
-            }.show()
+            Generics.showSnackBar(binding.layoutLogin,"Ingrese su contraseña por favor")
         if(email.isNotEmpty() && password.isNotEmpty())
             loginControl(email,password)
     }
@@ -80,10 +72,7 @@ class LoginActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     next()
                 } else {
-                    Snackbar.make(binding.layoutLogin,"Error algun dato erroneo",
-                            Snackbar.LENGTH_SHORT).apply {
-                        view.background = resources.getDrawable(R.drawable.round_corner, null)
-                    }.show()
+                    Generics.showSnackBar(binding.layoutLogin,"Error algun dato erroneo")
                 }
             }
     }

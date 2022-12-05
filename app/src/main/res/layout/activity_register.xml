@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:singleLine="true"
-            android:cursorVisible="@null"
+            android:textCursorDrawable="@null"
             android:textColor="@color/gold500" />
     </com.google.android.material.textfield.TextInputLayout>
 

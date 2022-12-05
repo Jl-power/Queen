@@ -22,4 +22,5 @@
     <string name="btn_confirm_code">Confirmar</string>
     <string name="recover2_title">Ingrese su nueva contraseña</string>
     <string name="recover2_subtitle">Repita la nueva contraseña</string>
+    <string name="action1">Contratar</string>
 </resources>

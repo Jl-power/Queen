@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg7"
+    android:id="@+id/layoutRecover"
+    tools:context=".RecoverActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tvCod4"
+        android:layout_width="75dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/round_corner_gold"
+        android:text=""
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textColor="@color/gold500"
+        android:visibility="invisible"
+        android:inputType="number"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvCod3"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitleRecover" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tvCod3"
+        android:layout_width="75dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/round_corner_gold"
+        android:text=""
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:textColor="@color/gold500"
+        android:inputType="number"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvCod4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvCod2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitleRecover" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tvCod2"
+        android:layout_width="75dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/round_corner_gold"
+        android:text=""
+        android:maxLength="1"
+        android:inputType="number"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textColor="@color/gold500"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvCod3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvCod1"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitleRecover" />
+
+    <TextView
+        android:id="@+id/tvRecover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/recover"
+        android:textColor="@color/gold500"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitleRecover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/recover_title"
+        android:textColor="@color/gold200"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecover" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutMailRecover"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/user"
+        android:textColorHint="@color/gold500"
+        app:boxBackgroundColor="@color/blueg500"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/gold700"
+        app:endIconCheckable="true"
+        app:endIconDrawable="@drawable/ic_mail"
+        app:endIconMode="custom"
+        app:endIconTint="@color/gold500"
+        app:hintTextColor="@color/gold500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleRecover">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputMailRecover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/gold500" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAcceptRecover"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/gold500"
+        android:text="@string/btn_accept"
+        android:textColor="@color/blueg500"
+        android:textSize="16sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCancelRecover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCancelRecover"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/btn_cancel"
+        android:textColor="@color/gold500"
+        android:textSize="16sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/gold500"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/tvSubtitleRecover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:visibility="invisible"
+        android:text="@string/recover_subtitle"
+        android:textColor="@color/gold200"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutMailRecover" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tvCod1"
+        android:layout_width="75dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/round_corner_gold"
+        android:text=""
+        android:visibility="invisible"
+        android:maxLength="1"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/gold500"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvCod2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitleRecover" />
+
+    <TextView
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20sp"
+        android:textColor="@color/gold200"
+        android:textAllCaps="true"
+        android:visibility="invisible"
+        android:text="@string/btn_confirm_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCod3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

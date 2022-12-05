@@ -32,6 +32,11 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.tvRecover.setOnClickListener {
+            val intent = Intent(this,RecoverActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun emptyControl(email: String, password: String) {

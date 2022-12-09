@@ -23,4 +23,8 @@
     <string name="recover2_title">Ingrese su nueva contraseña</string>
     <string name="recover2_subtitle">Repita la nueva contraseña</string>
     <string name="action1">Contratar</string>
+    <string name="action2">Comentar</string>
+    <string name="action3">Publicar</string>
+    <string name="detail_name">Nombre real:</string>
+    <string name="detail_age">Edad:</string>
 </resources>

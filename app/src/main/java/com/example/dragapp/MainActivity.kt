@@ -34,6 +34,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        binding.cardHire.setOnClickListener {
+            val intent = Intent(this,HireActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.cardReview.setOnClickListener {
+            val intent = Intent(this,CommentActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun setTextWelcome() {

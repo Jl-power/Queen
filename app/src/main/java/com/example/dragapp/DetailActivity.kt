@@ -74,6 +74,26 @@ class DetailActivity : AppCompatActivity() {
             expandImage(binding.imgGallery1.drawable)
         }
 
+        binding.imgGallery2.setOnClickListener {
+            expandImage(binding.imgGallery2.drawable)
+        }
+
+        binding.imgGallery3.setOnClickListener {
+            expandImage(binding.imgGallery3.drawable)
+        }
+
+        binding.imgGallery4.setOnClickListener {
+            expandImage(binding.imgGallery4.drawable)
+        }
+
+        binding.imgGallery5.setOnClickListener {
+            expandImage(binding.imgGallery5.drawable)
+        }
+
+        binding.imgGallery6.setOnClickListener {
+            expandImage(binding.imgGallery6.drawable)
+        }
+
     }
 
     private fun expandImage(drawable: Drawable?) {
@@ -81,13 +101,17 @@ class DetailActivity : AppCompatActivity() {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setContentView(R.layout.dialog)
         dialog.findViewById<ImageView>(R.id.dialogImage).setImageDrawable(drawable)
-        dialog.show()
+        dialog.findViewById<ImageView>(R.id.btn_cancel).setOnClickListener {
+            dialog.hide()
+        }
         dialog.window!!.setLayout(
             ViewGroup.LayoutParams.MATCH_PARENT,
             ViewGroup.LayoutParams.MATCH_PARENT
         )
         dialog.window!!.setGravity(Gravity.CENTER)
         dialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        dialog.show()
 
     }
 }

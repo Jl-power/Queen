@@ -54,11 +54,11 @@ class NewCommentActivity : AppCompatActivity() {
 
     private fun initSpinnerRating() {
         val rating = ArrayList<String?>()
-        rating.add("1")
-        rating.add("2")
-        rating.add("3")
-        rating.add("4")
         rating.add("5")
+        rating.add("4")
+        rating.add("3")
+        rating.add("2")
+        rating.add("1")
         val adp = ArrayAdapter<Any?>(this, R.layout.style_spinner, rating as List<Any?>)
         adp.setDropDownViewResource(R.layout.style_dropdown_spinner)
         binding.spinnerRating.setAdapter(adp)

@@ -12,6 +12,7 @@ import androidx.core.view.isVisible
 import com.example.dragapp.databinding.ActivityRecoverBinding
 import com.example.dragapp.utils.Generics
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -29,6 +30,8 @@ class RecoverActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRecoverBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        auth = Firebase.auth
 
         if(ActivityCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS)
             != PackageManager.PERMISSION_GRANTED){

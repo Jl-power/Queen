@@ -54,7 +54,7 @@ class RegisterActivity : AppCompatActivity() {
                     finish()
                 } else {
                     Generics.showSnackBar(binding.layoutRegister,
-                        "No se pudo crear el usuario... Intente de nuevo")
+                        "Ya existe un usuario con ese correo")
                 }
             }
     }

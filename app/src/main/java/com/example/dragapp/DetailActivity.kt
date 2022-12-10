@@ -12,6 +12,7 @@ import android.view.ViewGroup
 import android.view.Window
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.example.dragapp.databinding.ActivityDetailBinding
 import com.squareup.picasso.Picasso
@@ -51,6 +52,8 @@ class DetailActivity : AppCompatActivity() {
             .into(binding.imgGallery5)
         Picasso.get().load(intent.extras?.getStringArrayList("gallery")?.get(5))
             .into(binding.imgGallery6)
+
+        controlSocialMedia(intent.extras?.getStringArrayList("socialMedia"))
 
         binding.imgFacebook.setOnClickListener {
             val uri = Intent(Intent.ACTION_VIEW,
@@ -93,6 +96,16 @@ class DetailActivity : AppCompatActivity() {
         binding.imgGallery6.setOnClickListener {
             expandImage(binding.imgGallery6.drawable)
         }
+
+    }
+
+    private fun controlSocialMedia(socialMedia: ArrayList<String>?) {
+        if (socialMedia?.get(0) == "")
+            binding.imgFacebook.isVisible = false
+        if (socialMedia?.get(1) == "")
+            binding.imgInstagram.isVisible = false
+        if (socialMedia?.get(2) == "")
+            binding.imgTwitter.isVisible = false
 
     }
 
